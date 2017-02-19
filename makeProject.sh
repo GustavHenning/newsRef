@@ -10,4 +10,4 @@ rm -rf python-goose
 
 #install pyteaser
 sudo pip install -U pyteaser
-w
+echo "done"
