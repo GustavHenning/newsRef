@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-#spider used to find articles from a news website
+# spider used to find articles from a news website
 
 import urllib2
 from bs4 import BeautifulSoup
@@ -14,7 +14,7 @@ def main(searchurl, baseurl, regex, dryrun):
     links = soup.find_all('a')
 
     regexp=re.compile(regex)
-    
+
     for tag in links:
         link = tag.get('href',None)
         if link is not None and regexp.search(link):

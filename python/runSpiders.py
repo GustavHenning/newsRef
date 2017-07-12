@@ -1,7 +1,6 @@
 import spider, sys
 
 
-
 def main(dryrun):
     print dryrun
     # source, baseurl, regex on valid article links
